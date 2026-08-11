@@ -2,9 +2,10 @@
 import 'package:easy_localization/easy_localization.dart';
 import'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:project/core/helper/extentions.dart';
+import 'package:project/core/routes/routes.dart';
 import 'package:project/core/theme/app_colors.dart';
 import 'package:project/core/widgets/app_button.dart';
-import 'package:project/features/login/presentation/ui/login_screen.dart';
 import 'package:project/features/welcome/presentation/widgets/welcome_setting.dart';
 import 'package:project/gen/assets.gen.dart';
 
@@ -17,24 +18,29 @@ class WelcomeScreen extends StatelessWidget{
         width: double.infinity,
         padding: EdgeInsets.all(16.r),
         decoration: BoxDecoration(
+          
           image: DecorationImage(
             fit: BoxFit.cover,
             image:Assets.images.welcome2.image().image)
         ),
         child: Column(
           children: [
-            SizedBox(height:135.h),
+            135.verticalSpace,
             Assets.images.splashLogo.image(),
-            SizedBox(height:28.h),
+            28.verticalSpace,
             Text("Welcome text".tr(),style:Theme.of(context).textTheme.titleMedium),
-            SizedBox(height:28.h),
+            28.verticalSpace,
             WelcomeSetting(),
-            SizedBox(height:150.h),
+            150.verticalSpace,
                   AppButton(text: "Login".tr(),onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder:(context)=> LoginScreen()));
+                   context.pushNamed(context,Routes.loginScreen);
                   }),
-                  SizedBox(height:10.h),
-                  AppButton(text: "Register".tr(),backgroundColor:AppColors.backgroundLight)
+                  10.verticalSpace,
+                  AppButton(
+                    onTap: (){
+                      context.pushNamed(context,Routes.registerScreen);
+                    },
+                    text: "Register".tr(),backgroundColor:AppColors.backgroundLight)
           ],
         ),
       ),

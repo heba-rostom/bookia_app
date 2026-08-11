@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:project/core/cubit/cubit/theme_cubit.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:project/features/welcome/presentation/welcome_screen.dart';
+import 'package:project/core/routes/app_router.dart';
+import 'package:project/core/routes/routes.dart';
 
 class BookiaApp extends StatelessWidget {
-  const BookiaApp({super.key});
+  final String ?token;
+  const BookiaApp({super.key, required this.token});
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -24,7 +26,9 @@ class BookiaApp extends StatelessWidget {
                 locale: context.locale,
                 debugShowCheckedModeBanner: false,
                 theme:context.read<ThemeCubit>().appTheme,
-                home: WelcomeScreen(),
+                onGenerateRoute:AppRouter.onGenerateRoute,
+                initialRoute:token==null? Routes.welcomeScreen:Routes.homeScreen,
+                
               );
             },
           ),

@@ -3,7 +3,7 @@
 
 "Welcome text":" احجز طلبك الأن !",
 "Dark Mode" : "الوضع الداكن",
-"Eglish Language":"اللغه الإنجليزيه",
+"Egnlish Language":"اللغه الإنجليزيه",
 "Login":"تسجيل الدخول",
 "Register":"إنشاء حساب",
 "Login Text 1":"أهلاً بعودتك! سعيدٌ بذلك",
@@ -18,7 +18,8 @@
 "Username":"اسم المستخدم",
 "Email":"إيميل",
 "Password":"الرقم السري",
-"Confirm password":"تأكيد كلمة المرور"
+"Confirm password":"تأكيد كلمة المرور",
+"Forget Password":"هل نسيت الرقم السري ؟ "
 
 
 

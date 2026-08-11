@@ -3,7 +3,7 @@
 
 "Welcome text":" Order Your Book Now !",
 "Dark Mode" : "Dark Mode",
-"Eglish Language":"English Language",
+"Egnlish Language":"Egnlish Language",
 "Login":"Login",
 "Register":"Register",
 "Login Text 1":"Welcome back! Glad",
@@ -18,7 +18,8 @@
 "Username":"Username",
 "Email":"Email",
 "Password":"Password",
-"Confirm password":"Confirm password"
+"Confirm password":"Confirm password",
+"Forget Password":"Forget Your Password ? "
 
 
 }

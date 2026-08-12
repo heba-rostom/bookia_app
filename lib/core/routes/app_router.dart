@@ -5,6 +5,7 @@ import 'package:project/core/routes/routes.dart';
 import 'package:project/features/home_screen/presentation/ui/home_screen.dart';
 import 'package:project/features/login_screen/presentation/cubit/cubit/login_cubit.dart';
 import 'package:project/features/login_screen/presentation/ui/login_screen.dart';
+import 'package:project/features/register_screen/presentation/cubit/cubit/register_cubit.dart';
 import 'package:project/features/register_screen/presentation/ui/register_screen.dart';
 import 'package:project/features/welcome/presentation/welcome_screen.dart';
 
@@ -21,7 +22,12 @@ class AppRouter {
   ),
 );
           case Routes.registerScreen:
-          return MaterialPageRoute(builder:(context)=>RegisterScreen());
+          return MaterialPageRoute(
+  builder: (context) => BlocProvider(
+    create: (context) => RegisterCubit(),
+    child: const RegisterScreen(),
+  ),
+);
           case Routes.welcomeScreen:
           return MaterialPageRoute(builder:(context)=>WelcomeScreen());
           case Routes.homeScreen:

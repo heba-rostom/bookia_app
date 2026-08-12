@@ -19,7 +19,9 @@
 "Email":"إيميل",
 "Password":"الرقم السري",
 "Confirm password":"تأكيد كلمة المرور",
-"Forget Password":"هل نسيت الرقم السري ؟ "
+"Forget Password":"هل نسيت الرقم السري ؟ ",
+"address":"العنوان",
+"city":"المدينه"
 
 
 

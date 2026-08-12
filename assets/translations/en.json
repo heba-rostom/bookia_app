@@ -19,7 +19,9 @@
 "Email":"Email",
 "Password":"Password",
 "Confirm password":"Confirm password",
-"Forget Password":"Forget Your Password ? "
+"Forget Password":"Forget Your Password ? ",
+"address":"address",
+"city":"city"
 
 
 }

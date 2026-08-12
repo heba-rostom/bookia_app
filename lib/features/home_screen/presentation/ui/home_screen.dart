@@ -5,6 +5,13 @@ class HomeScreen extends StatelessWidget{
   const HomeScreen({super.key});
   @override
   Widget build(BuildContext context) {
-   return Scaffold();
+   return Scaffold(
+    body: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Center(child: Text("home screen",style:Theme.of(context).textTheme.titleMedium)),
+      ],
+    ),
+   );
   }
 }

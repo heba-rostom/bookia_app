@@ -27,7 +27,7 @@ class BookiaApp extends StatelessWidget {
                 debugShowCheckedModeBanner: false,
                 theme:context.read<ThemeCubit>().appTheme,
                 onGenerateRoute:AppRouter.onGenerateRoute,
-                initialRoute:token==null? Routes.welcomeScreen:Routes.homeScreen,
+                initialRoute:token==null? Routes.welcomeScreen:Routes.registerScreen,
                 
               );
             },
